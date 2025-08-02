@@ -16,7 +16,7 @@ nvme=1
 discard_grain=$(lsblk -ndo DISC-GRAN)
 
 # Partition naming
-if ["$nvme" -eq 1]; then
+if [ "$nvme" -eq 1 ]; then
 part_1="${disk_device}p1"
 part_2="${disk_device}p2"
 part_3="${disk_device}p3"
